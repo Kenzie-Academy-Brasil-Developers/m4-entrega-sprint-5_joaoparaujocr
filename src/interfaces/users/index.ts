@@ -25,3 +25,24 @@ export interface IUserUpdate {
     email?: string
     password?: string
 }
+
+export interface IUserCreate {
+    id: string
+    name: string
+    email: string
+    password: string
+    isAdm: boolean
+    isActive: boolean
+    createdAt: Date
+    updatedAt: Date
+};
+
+export interface IUserCreateResponse {
+    name: string
+    email: string
+    isAdm: boolean
+    isActive: boolean
+    createdAt: string
+    updatedAt: string
+    id: string
+}
